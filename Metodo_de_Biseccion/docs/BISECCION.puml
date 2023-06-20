@@ -1,0 +1,31 @@
+class Programa {
+    - main()
+}
+
+class Funcion {
+    + f(x: double): double
+}
+
+class Biseccion {
+    - a : double
+    - b : double
+    - Ite : double
+    - c : float[]
+    - ER : float[]
+    - er : float
+    - opc : char
+    + Biseccion()
+    + ejecutar()
+    + imprimirPuntos(a: double, b: double)
+}
+
+class Consola {
+    + WriteLine(message: string)
+    + ReadLine(): string
+}
+
+Programa --> Biseccion
+Programa --> Funcion
+Programa --> Consola
+Biseccion --> Funcion
+Biseccion --> Consola
